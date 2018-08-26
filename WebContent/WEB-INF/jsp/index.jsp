@@ -7,12 +7,9 @@
 <title>HomePage</title>
 </head>
 <body>
-	Hey User, May I know your Name?
-	<form action="hello">
-
-		<input type="text" name="name" placeholder="Enter your name">
-		<input type="submit" value="Submit">
-
-	</form>
-</body>
+	Hello to SPRING MVC Forms : 
+	 
+	<a href="employee/showForm">Click Here to goto fill the Employee Form </a>
+	
+	</body>
 </html>
