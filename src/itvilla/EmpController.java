@@ -1,5 +1,7 @@
 package itvilla;
 
+import java.util.Arrays;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
@@ -33,8 +35,11 @@ public class EmpController {
 	public String processForm(@ModelAttribute("e1") Employee tempemp) {
 		
 		// log the input data
-		System.out.println("tempemp: " + tempemp.getEmpid()
-							+ " " + tempemp.getEmpname() + " " + tempemp.getEmpdept());
+		System.out.println("tempemp1: " + tempemp.getEmpid()
+							+ " " + tempemp.getEmpname() + " " + tempemp.getEmpdept()+ " " );
+		
+		System.out.println("Lets display checkbox array " +  Arrays.toString(tempemp.getKlang()));
+		
 		
 		return "empconfirm";
 	}
